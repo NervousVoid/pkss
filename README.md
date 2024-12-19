@@ -1,4 +1,4 @@
-# ПКСС Практика 12
+![image](https://github.com/user-attachments/assets/5626e143-55a6-40e4-b42d-f4f2d8ca8221)![image](https://github.com/user-attachments/assets/94a42dbf-4f11-467f-8199-71a7c9f2657e)# ПКСС Практика 12
 ## Структура функциональных возможностей
 ```mermaid
 mindmap
@@ -60,4 +60,44 @@ journey
     Подтверждение выплаты: 5: Банк
 ![image](https://github.com/user-attachments/assets/0fc4a64c-ada3-40b0-a2c2-9b22e1f0f030)
 ```
+## Квадрант-граф
+```mermaid
+graph TD
+    A1(Высокая важность, Низкая сложность) --> B1(Расчет базового оклада)
+    A1 --> B2(Формирование табелей)
+    A1 --> B3(Расчетные листы)
+    
+    A2(Высокая важность, Высокая сложность) --> C1(Интеграция с банком)
+    A2 --> C2(Расчет сложных премий)
+    
+    A3(Низкая важность, Низкая сложность) --> D1(Email-уведомления)
+    A3 --> D2(Простые отчеты)
+    
+    A4(Низкая важность, Высокая сложность) --> E1(Аналитика эффективности)
+    A4 --> E2(Прогнозирование ФОТ)
+```
+## Git-граф
+```mermaid
+gitGraph
+    commit id: "Initial commit"
+    branch development
+    commit id: "Базовая структура проекта"
+    commit id: "Модуль расчета оклада"
+    branch feature/timesheet
+    commit id: "Создание табеля учета времени"
+    commit id: "Расчет отработанных часов"
+    checkout development
+    commit id: "Интерфейс бухгалтера"
+    checkout feature/timesheet
+    commit id: "Оптимизация расчетов"
+    checkout development
+    merge feature/timesheet id: "Слияние учета времени"
+    branch feature/payments
+    commit id: "Интеграция с банком"
+    checkout development
+    merge feature/payments id: "Слияние платежного модуля"
+    branch feature/reports
+    commit id: "Система отчетности"
+    checkout development
+    merge feature/reports id: "Слияние модуля отчетов"
 
