@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5626e143-55a6-40e4-b42d-f4f2d8ca8221)![image](https://github.com/user-attachments/assets/94a42dbf-4f11-467f-8199-71a7c9f2657e)# ПКСС Практика 12
+# ПКСС Практика 12
 ## Структура функциональных возможностей
 ```mermaid
 mindmap
